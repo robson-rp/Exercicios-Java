@@ -4,7 +4,6 @@ import java.util.Random;
 
 import algoritmos_basicos.NumeroPar;
 import algoritmos_basicos.NumerosPerfeitos;
-import matrizes.MatrizesUtils;
 
 // Escreva um programa que preencha um array de 20 posições de números
 // inteiros e mostra quais os elementos são;
@@ -26,7 +25,7 @@ public class E18 {
 
         //mostra os elementos da array
         System.out.print("Array 1: ");
-        MatrizesUtils.printArray(arr1);
+        
         System.out.println();
 
         int[] divisiveisDeCincoTresEDez = divisiveisDeCincoTresEDez(arr1);
@@ -36,22 +35,30 @@ public class E18 {
 
         //Mostra os numeros divisiveis por 5,3 e 10
         System.out.print("Numeros divisiveis por 5,3 e 10: ");
-        MatrizesUtils.printArray(divisiveisDeCincoTresEDez);
+        for (int i : divisiveisDeCincoTresEDez) {
+            System.out.println(i + " ");
+        }
         System.out.println();
 
         //Imprime os numeros pares
         System.out.print("Numeros pares : ");
-        MatrizesUtils.printArray(pares);
+        for (int i : pares) {
+            System.out.println(i + " ");
+        }
         System.out.println();
 
         //Imprime os numeros impares
         System.out.print("Numeros impares : ");
-        MatrizesUtils.printArray(impares);
+        for (int i : impares) {
+            System.out.println(i + " ");
+        }
         System.out.println();
 
         //imprime os numeros perfeitos
         System.out.print("Numeros perfeitos : ");
-        MatrizesUtils.printArray(perfeitos);
+        for (int i : perfeitos) {
+            System.out.println(i + " ");
+        }
         System.out.println();
     }
 
