@@ -1,7 +1,5 @@
 package algoritmos_basicos;
 
-import java.util.Scanner;
-
 public class prova2021 {
     // Primo
     private static boolean isPrimo(int n){
